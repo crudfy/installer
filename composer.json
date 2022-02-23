@@ -1,0 +1,44 @@
+{
+    "name": "crudfy/installer",
+    "description": "Crudfy application installer.",
+    "keywords": ["crudfy"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mamadou Hady Barry",
+            "email": "seidya.dev.mhb@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.3|^8.0",
+        "guzzlehttp/guzzle": "6.3.3",
+        "symfony/console": "^4.0|^5.0|^6.0",
+        "symfony/process": "^4.2|^5.0|^6.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0|^9.3"
+    },
+    "bin": [
+        "bin/crudfy"
+    ],
+    "autoload": {
+        "psr-4": {
+            "Crudfy\\Installer\\Console\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Crudfy\\Installer\\Console\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "3.x-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stabilitys": "dev",
+    "prefer-stable": false
+}
